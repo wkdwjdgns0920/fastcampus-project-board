@@ -30,7 +30,7 @@ public class ArticleCommentService {
     public void updateArticleComment(ArticleCommentDto dto) {
     }
 
-    public void deleteArticleComment(ArticleCommentDto dto) {
+    public void deleteArticleComment(Long articleCommentId) {
     }
 
 }
