@@ -28,9 +28,8 @@ class MainControllerTest {
         // When & Then
         mvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(view().name("forward:articles"))
+                .andExpect(view().name("forward:/articles"))
                 .andExpect(forwardedUrl("/articles"))
                 .andDo(MockMvcResultHandlers.print());
-
     }
 }
